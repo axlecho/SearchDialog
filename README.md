@@ -1,4 +1,6 @@
 # SearchDialog
+[![](https://jitpack.io/v/axlecho/SearchDialog.svg)](https://jitpack.io/#axlecho/SearchDialog)
+
 仿bilibili搜索框效果(只需要三句话即可实现)
 
 先看预览图(转换后有一点点失真):
@@ -20,10 +22,26 @@
 
 Usage
 --------
+Repository
+Add this in your root build.gradle file (not your module build.gradle file):
 
-With Gradle:
 ```groovy
-  compile 'com.wenwenwen888:searchbox:1.0.0'
+	allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+```
+
+
+Dependency
+Add this to your module's build.gradle file:
+
+```groovy
+	dependencies {
+	        compile 'com.github.axlecho:SearchDialog:0.0.1'
+	}
 ```
 
 
